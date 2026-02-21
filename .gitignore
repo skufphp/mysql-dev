@@ -1,0 +1,63 @@
+# =========================
+# Secrets / env
+# =========================
+.env
+.env.*
+*.env
+!.env.example
+
+# =========================
+# Dependencies (PHP / Composer)
+# =========================
+/vendor/
+
+# =========================
+# Runtime / cache / sessions
+# =========================
+/var/
+/cache/
+/storage/
+/sessions/
+tmp/
+temp/
+*.tmp
+
+# =========================
+# Logs
+# =========================
+*.log
+logs/
+
+# =========================
+# Backups / dumps
+# =========================
+backups/
+*.sql
+*.dump
+*.backup
+
+# =========================
+# Docker (local overrides / pid files)
+# =========================
+docker-compose.override.yml
+*.pid
+
+# =========================
+# Local volumes (если вдруг маппятся в проект)
+# =========================
+pgdata/
+data/
+
+# =========================
+# IDE / Editors
+# =========================
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# =========================
+# OS junk
+# =========================
+.DS_Store
+Thumbs.db
