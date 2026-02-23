@@ -2,7 +2,7 @@
 # MySQL & phpMyAdmin Docker Environment
 # ==========================================
 
-.PHONY: help up down restart logs status shell clean clean-all
+.PHONY: help check-env up down restart logs logs-db logs-pma status shell clean clean-all
 
 # Цвета для вывода
 YELLOW=\033[0;33m

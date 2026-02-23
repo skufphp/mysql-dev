@@ -45,4 +45,4 @@ volumes:
 
 networks:
   mysql-dev-network:
-    driver: bridge
+    name: mysql-dev-network
