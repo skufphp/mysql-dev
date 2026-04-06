@@ -101,8 +101,8 @@ FLUSH PRIVILEGES;
 
 ```dotenv
 DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=7033
+DB_HOST=mysql-dev
+DB_PORT=3306
 DB_DATABASE=app1_db
 DB_USERNAME=app1_user
 DB_PASSWORD=<PASSWORD_PLACEHOLDER>
@@ -111,8 +111,8 @@ DB_PASSWORD=<PASSWORD_PLACEHOLDER>
 После изменения `.env` обязательно сбросьте кэш конфигурации (Laravel это любит):
 
 ```bash
-php artisan config:clear
-php artisan cache:clear
+docker exec laravel-php-service php artisan config:clear
+docker exec laravel-php-service php artisan cache:clear
 ```
 
 Дальше запускайте миграции:
